@@ -6,6 +6,10 @@ export const routes: Routes = [
     loadComponent: () => import("./features/shop/pages/home/home.component").then((m) => m.HomeComponent),
   },
   {
+    path: "search",
+    loadComponent: () => import("./features/shop/pages/search/search.component").then((m) => m.SearchComponent),
+  },
+  {
     path: "product-detail",
     loadComponent: () => import("./features/product/pages/product/product.component").then((m) => m.ProductComponent),
   },
